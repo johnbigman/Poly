@@ -294,4 +294,56 @@ ChunkData 클래스
 
 ---
 
-이 전투 시스템은 속성 상성과 전략적 선택을 통해 플레이어에게 깊이 있는 전투 경험을 제공합니다. 추가 조정이 필요하면 말씀해주세요!
+/Scripts   
+  ├── /Core  
+  │   ├── CoreManager.cs          // 전체 시스템 관리  
+  │   ├── EventSystem.cs          // 시스템 간 이벤트 전달  
+  │   ├── GameSettings.cs         // 게임 전역 설정 및 관리  
+
+  ├── /World  
+  │   ├── WorldManager.cs         // 월드 및 청크 관리  
+  │   ├── TerrainGenerator.cs     // 지형 생성 및 데이터 관리  
+  │   ├── ChunkHandler.cs         // 청크 로드 및 언로드  
+  │   ├── ChunkData.cs            // 청크 데이터 저장  
+  │   ├── BlockManager.cs         // 블록 데이터 관리 및 최적화  
+  │   ├── ObjectSpawner.cs        // 나무, 광맥 등의 동적 오브젝트 스폰  
+
+  ├── /Player  
+  │   ├── PlayerManager.cs        // 플레이어 입력 및 상태 관리  
+  │   ├── InventoryManager.cs     // 인벤토리 관리  
+  │   ├── EquipmentManager.cs     // 장비 및 스탯 관리  
+  │   ├── QuestTracker.cs         // 퀘스트 진행 상황 관리  
+
+  ├── /Monster  
+  │   ├── MonsterManager.cs       // 몬스터 데이터 및 상태 관리  
+  │   ├── MonsterAI.cs            // 몬스터 행동 패턴 및 전투 로직  
+  │   ├── EggHatchingSystem.cs    // 몬스터 알 부화 시스템  
+  │   ├── BattleSystem.cs         // 몬스터 전투 로직  
+  │   ├── SkillManager.cs         // 몬스터 기술 관리  
+
+  ├── /Items  
+  │   ├── ItemDatabase.cs         // 아이템 데이터베이스  
+  │   ├── ItemManager.cs          // 아이템 생성 및 사용 로직  
+  │   ├── ItemData.cs             // 아이템 속성 정의  
+  │   ├── ConsumableEffect.cs     // 소모 아이템 효과 적용  
+
+  ├── /UI  
+  │   ├── UIManager.cs            // UI 관리  
+  │   ├── QuestUI.cs              // 퀘스트 UI  
+  │   ├── InventoryUI.cs          // 인벤토리 UI  
+  │   ├── MonsterCodexUI.cs       // 몬스터 도감 UI  
+
+  ├── /SaveLoad  
+  │   ├── SaveManager.cs          // 게임 저장 및 로드  
+  │   ├── BackupSystem.cs         // 데이터 백업 및 복구  
+
+  ├── /Utilities  
+  │   ├── Logger.cs               // 로그 관리  
+  │   ├── LODManager.cs           // Level of Detail 시스템  
+  │   ├── FrustumCulling.cs       // 프러스텀 컬링  
+  │   ├── OcclusionCulling.cs     // 오클루전 컬링  
+  │   ├── DataCompression.cs      // 데이터 압축 및 최적화  
+
+  └── /Tests  
+      ├── UnitTests.cs            // 단위 테스트 스크립트  
+      ├── IntegrationTests.cs     // 통합 테스트 스크립트  
